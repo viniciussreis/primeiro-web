@@ -9,6 +9,7 @@ public class HibernateUtilTest {
 	public static void main(String[] args) {
 		Session secao = HibernateUtil.getFabricadesessoes().openSession();
 		secao.close();
+		HibernateUtil.getFabricadesessoes().close();
 	}
 
 }
